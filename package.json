@@ -1,0 +1,22 @@
+{
+  
+  "name": "chemistry-quick-check",
+  "version": "v1.0.0dev",
+  "description": "A tool to simplify verifying if an equation, compound or chemical class satisfies its computational rules.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Science Software Engineering",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/ScienceSoftwareEngineering/chemistry-quick-check",
+  "bugs": {
+    "url": "https://github.com/orgs/ScienceSoftwareEngineering/projects/3",
+    "email": "sciencesoftwareengineering@gmail.com"
+  },
+  "dependencies": {
+    "pnpm": "^10.10.0"
+  },
+  "type": "commonjs"
+}

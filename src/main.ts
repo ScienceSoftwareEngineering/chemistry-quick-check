@@ -1,0 +1,1 @@
+export { isAlkane, isAlkene, isAlkyne} from "./compound/hydrocarbons";
