@@ -19,15 +19,15 @@ function isHalogenatedHydrocarbonByCount(numAtoms: NumAtoms): boolean {
     let isHydrocarbonWhenUnHalogenated = false;
 
     if (!isHydrocarbonWhenUnHalogenated) {
-        if (isAlkane({ NumCarbons: numAtoms.NumCarbons, NumHydrogens: numHydrogensUnHalogenated })) {
+        if (isAlkaneByCount({ NumCarbons: numAtoms.NumCarbons, NumHydrogens: numHydrogensUnHalogenated })) {
             return isHydrocarbonWhenUnHalogenated = true;
         }
 
-        if (isAlkene({ NumCarbons: numAtoms.NumCarbons, NumHydrogens: numHydrogensUnHalogenated })) {
+        if (isAlkeneByCount({ NumCarbons: numAtoms.NumCarbons, NumHydrogens: numHydrogensUnHalogenated })) {
             return isHydrocarbonWhenUnHalogenated = true;
         }
 
-        if (isAlkyne({ NumCarbons: numAtoms.NumCarbons, NumHydrogens: numHydrogensUnHalogenated })) {
+        if (isAlkyneByCount({ NumCarbons: numAtoms.NumCarbons, NumHydrogens: numHydrogensUnHalogenated })) {
             return isHydrocarbonWhenUnHalogenated = true;
         }
     }
