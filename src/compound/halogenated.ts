@@ -1,4 +1,4 @@
-import { isAlkane, isAlkene, isAlkyne } from "./hydrocarbons";
+import { isAlkaneByCount, isAlkeneByCount, isAlkyneByCount } from "./hydrocarbons";
 
 enum Halogen {
     Flourine,
@@ -13,7 +13,7 @@ interface NumAtoms {
     NumHalogens: number
 }
 
-function isHalogenatedHydrocarbon(numAtoms: NumAtoms) {
+function isHalogenatedHydrocarbonByCount(numAtoms: NumAtoms): boolean {
     const numHydrogensUnHalogenated = numAtoms.NumHydrogens + numAtoms.NumHalogens
 
     let isHydrocarbonWhenUnHalogenated = false;
@@ -35,4 +35,6 @@ function isHalogenatedHydrocarbon(numAtoms: NumAtoms) {
     return isHydrocarbonWhenUnHalogenated;
 }
 
-export { isHalogenatedHydrocarbon };
+export {
+    isHalogenatedHydrocarbonByCount
+};

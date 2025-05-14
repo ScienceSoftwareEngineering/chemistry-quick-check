@@ -1,2 +1,6 @@
-export { isAlkane, isAlkene, isAlkyne } from "./compound/hydrocarbons";
-export { isHalogenatedHydrocarbon } from "./compound/halogenated"
+export {
+    isAlkaneByCount, isAlkeneByEquation,
+    isAlkeneByCount,
+    isAlkyneByCount
+} from "./compound/hydrocarbons";
+export { isHalogenatedHydrocarbonByCount } from "./compound/halogenated"

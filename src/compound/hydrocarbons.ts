@@ -3,7 +3,9 @@ interface NumAtoms {
     NumHydrogens: number
 }
 
-function isAlkane(numAtoms: NumAtoms) {
+
+// Basic Test Checking
+function isAlkaneByCount(numAtoms: NumAtoms): boolean {
     if (numAtoms.NumHydrogens == (2 * numAtoms.NumCarbons) + 2) {
         return true;
     } else {
@@ -11,7 +13,7 @@ function isAlkane(numAtoms: NumAtoms) {
     }
 }
 
-function isAlkene(numAtoms: NumAtoms) {
+function isAlkeneByCount(numAtoms: NumAtoms): boolean {
     if (numAtoms.NumHydrogens == (2 * numAtoms.NumCarbons)) {
         return true;
     } else {
@@ -19,7 +21,7 @@ function isAlkene(numAtoms: NumAtoms) {
     }
 }
 
-function isAlkyne(numAtoms: NumAtoms) {
+function isAlkyneByCount(numAtoms: NumAtoms): boolean {
     if (numAtoms.NumHydrogens == (2 * numAtoms.NumCarbons) - 2) {
         return true;
     } else {
@@ -27,4 +29,13 @@ function isAlkyne(numAtoms: NumAtoms) {
     }
 }
 
-export { isAlkane, isAlkene, isAlkyne };
+// Equation Test Checking
+function isAlkeneByEquation(Equation: string) {
+
+}
+
+export {
+    isAlkaneByCount, isAlkeneByEquation,
+    isAlkeneByCount,
+    isAlkyneByCount
+};
