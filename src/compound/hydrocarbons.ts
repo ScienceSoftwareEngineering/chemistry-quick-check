@@ -30,12 +30,15 @@ function isAlkyneByCount(numAtoms: NumAtoms): boolean {
 }
 
 // Equation Test Checking
-function isAlkeneByEquation(Equation: string) {
+function isAlkeneByEmpiricalFormula(Equation: string) {
 
 }
 
 export {
-    isAlkaneByCount, isAlkeneByEquation,
+    isAlkaneByCount, isAlkeneByEmpiricalFormula,
     isAlkeneByCount,
-    isAlkyneByCount
+    isAlkyneByCount,
+    NumAtoms
 };
+
+// val equation = "2H2 + O2 -> 2H2O"
